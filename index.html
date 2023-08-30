@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="conrainer">
+      <p id="header">todo list</p>
+      <form class="layout">
+        <div class="input-contain">
+          <input
+            type="text"
+            id="input"
+            name="fname"
+            autocomplete="off"
+            value=""
+            aria-labelledby="placeholder-fname"
+          />
+          <label class="placeholder-text" for="fname" id="placeholder-fname">
+            <div class="text">task</div>
+          </label>
+          <button id="btn">+</button>
+        </div>
+      </form>
+      <div class="content">
+        <div id="todolist" class="list">
+          <h3 id="todotitle">todo</h3>
+          <ul id="todo"></ul>
+        </div>
+        <div id="donelist" class="list">
+          <h3 id="donetitle">done</h3>
+          <ul id="done"></ul>
+        </div>
+      </div>
+      <p class="result"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
